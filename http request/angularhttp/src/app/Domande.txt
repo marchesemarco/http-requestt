@@ -1,0 +1,11 @@
+15.1
+1.dobbiamo importare ciò che ci serve da @angular/common/http
+2.data è l’oggetto che conterrà il risultato della nostra chiamata http
+loading è una variabile che ci dice se siamo in attesa di una risposta dal server
+o è un oggetto che notifica quando arriva la risposta http dal server
+3.con la dependency injection diciamo ad angular di passarci il modulo Http quando crea l’istanza del nostro componente foo,
+si imprta nel ts con "import { HttpClient } from '@angular/common/http'";
+4.La variabile all'interno del public viene dichiarata automaticamente mentre nel secondo metodo siamo noi a dichiararla
+5.basta dichiararlo e richiamarlo quando bisogna metterci i dati "this.o = this.http.get('https://jsonplaceholder.typicode.com/posts/1');"
+
+
